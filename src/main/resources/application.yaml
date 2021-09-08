@@ -1,0 +1,19 @@
+server:
+  port: 9206
+spring:
+  application:
+    name: AUSTIN-HUB-API-SERVICE
+  datasource:
+    password: ok
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/austinhub?serverTimezone=America/Chicago&useSSL=false
+    username: root
+
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
